@@ -1,0 +1,10 @@
+{
+  "users": [],
+  "roles": [
+    { "id": 1, "name": "Super Admin", "description": "Full system control" },
+    { "id": 2, "name": "Admin", "description": "Manage users and system settings" },
+    { "id": 3, "name": "Team Lead", "description": "Leads development team and reviews work" },
+    { "id": 4, "name": "Developer", "description": "Develops application features" },
+    { "id": 5, "name": "Junior Developer", "description": "Assists in development tasks" }
+  ]
+}

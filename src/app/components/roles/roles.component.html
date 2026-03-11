@@ -1,5 +1,25 @@
-<p>roles works!</p>
 <div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let role of roles; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ role.name }}</td>
+                    <td>{{ role.description }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="row">
     <div class="col-3">{{ name }}</div>
     <div class="col-3">{{ department }}</div>
     <div class="col-3">{{ JoinDate}}</div>  
@@ -30,4 +50,4 @@
     <div class="col-3">
         <button class="btn btn-secondary" (click)="showMessage('This is a message from the Roles component!')">Show Message</button>
     </div>
-</div>
+</div> -->

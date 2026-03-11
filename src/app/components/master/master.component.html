@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-12 text-center">
         <div class="btn-group">
-            <button type="button" (click)="showRoles()" class="btn btn-primary">Roles</button>
-            <button type="button" (click)="showDesignation()" class="btn btn-primary">Designation</button>
+            <button type="button" (click)="showRoles()" class="btn" [ngClass]="currentComponent === 'roles' ? 'btn-success' : 'btn-primary'">Roles</button>
+            <button type="button" (click)="showDesignation()" class="btn" [ngClass]="currentComponent === 'designation' ? 'btn-success' : 'btn-primary'">Designation</button>
         </div>
     </div>
 </div>
