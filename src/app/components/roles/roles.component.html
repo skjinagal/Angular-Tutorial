@@ -1,0 +1,33 @@
+<p>roles works!</p>
+<div class="row">
+    <div class="col-3">{{ name }}</div>
+    <div class="col-3">{{ department }}</div>
+    <div class="col-3">{{ JoinDate}}</div>  
+    <div class="col-3">{{selectedRole}}</div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <input type="text" class="form-control" [value]="name">
+    </div>
+    <div class="col-3">
+        <input [type] = "inputType" class="form-control" [value]="department">
+    </div>
+    <div class="col-3">
+        <input type="text" class="form-control" [(ngModel)]="name">
+    </div>
+    <div class="col-3">
+    <select name="Roles" id="" [(ngModel)]="selectedRole">
+        <option value="HR">HR</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showWelcomeAlert()">Show Welcome Alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-secondary" (click)="showMessage('This is a message from the Roles component!')">Show Message</button>
+    </div>
+</div>
