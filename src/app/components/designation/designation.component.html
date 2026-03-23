@@ -1,1 +1,22 @@
-<p>designation works!</p>
+<div class="row">
+
+    @if (isLoading) {
+    <div class="col-12">
+        <div class="spinner-border"></div>
+    </div>
+    }
+    @else {
+    @for (des of designations; track $index) {
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{ des.title }}</h4>
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Delete</a>
+            </div>
+        </div>
+    </div>
+    }
+    }
+
+</div>

@@ -3,6 +3,8 @@ import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IRole } from '../../models/interfaces/role';
 import { CommonModule } from '@angular/common';
+import { MasterService } from '../../services/master.service';
+import { ApiResponseModel } from '../../models/interfaces/apiresponsemodel';
 
 @Component({
   selector: 'app-roles',
@@ -13,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class RolesComponent implements OnInit {
 
   roles: IRole[] = [];
-
+  masterService = inject(MasterService);
   ngOnInit(): void
   {
     this.getAllRoles();
@@ -22,9 +24,12 @@ export class RolesComponent implements OnInit {
   httpClient = inject(HttpClient);
 
   getAllRoles() {
-    this.httpClient.get('http://localhost:3000/roles').subscribe((data) => {
-      this.roles = data as IRole[];
-      console.log(this.roles);
+    this.masterService.getRoles().subscribe((res) => {
+      this.roles = res;
+      // console.log(this.roles);
+      console.log(res);
+    }, error => {
+      console.error('Error fetching roles:', error);
     });
   }
   // name: string = 'John Doe';
