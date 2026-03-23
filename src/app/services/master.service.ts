@@ -4,6 +4,7 @@ import { ApiResponseModel } from '../models/interfaces/apiresponsemodel';
 import { Observable } from 'rxjs';
 import { IRole } from '../models/interfaces/role';
 import { IDesignation } from '../models/interfaces/designations';
+import { Client } from '../models/client';
 
 @Injectable({
   providedIn: 'root'

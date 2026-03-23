@@ -21,12 +21,9 @@ export class RolesComponent implements OnInit {
     this.getAllRoles();
   }
 
-  httpClient = inject(HttpClient);
-
   getAllRoles() {
     this.masterService.getRoles().subscribe((res) => {
       this.roles = res;
-      // console.log(this.roles);
       console.log(res);
     }, error => {
       console.error('Error fetching roles:', error);

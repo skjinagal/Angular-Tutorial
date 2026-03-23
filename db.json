@@ -1,20 +1,82 @@
 {
   "users": [],
   "roles": [
-    { "id": 1, "name": "Super Admin", "description": "Full system control" },
-    { "id": 2, "name": "Admin", "description": "Manage users and system settings" },
-    { "id": 3, "name": "Team Lead", "description": "Leads development team and reviews work" },
-    { "id": 4, "name": "Developer", "description": "Develops application features" },
-    { "id": 5, "name": "Junior Developer", "description": "Assists in development tasks" }
+    {
+      "id": "1",
+      "name": "Super Admin",
+      "description": "Full system control"
+    },
+    {
+      "id": "2",
+      "name": "Admin",
+      "description": "Manage users and system settings"
+    },
+    {
+      "id": "3",
+      "name": "Team Lead",
+      "description": "Leads development team and reviews work"
+    },
+    {
+      "id": "4",
+      "name": "Developer",
+      "description": "Develops application features"
+    },
+    {
+      "id": "5",
+      "name": "Junior Developer",
+      "description": "Assists in development tasks"
+    }
   ],
   "designations": [
-    { "id": 1, "title": "Software Engineer" },
-    { "id": 2, "title": "Senior Software Engineer" },
-    { "id": 3, "title": "Team Lead" },
-    { "id": 4, "title": "Engineering Manager" },
-    { "id": 5, "title": "Technical Architect" },
-    { "id": 6, "title": "DevOps Engineer" },
-    { "id": 7, "title": "QA Engineer" },
-    { "id": 8, "title": "Product Manager" }
-  ]
+    {
+      "id": "1",
+      "title": "Software Engineer"
+    },
+    {
+      "id": "2",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "id": "3",
+      "title": "Team Lead"
+    },
+    {
+      "id": "4",
+      "title": "Engineering Manager"
+    },
+    {
+      "id": "5",
+      "title": "Technical Architect"
+    },
+    {
+      "id": "6",
+      "title": "DevOps Engineer"
+    },
+    {
+      "id": "7",
+      "title": "QA Engineer"
+    },
+    {
+      "id": "8",
+      "title": "Product Manager"
+    }
+  ],
+  "clients": [
+    {
+      "id": "7130",
+      "clientId": 0,
+      "companyName": "ABB",
+      "contactPersonName": "Alok",
+      "contactNo": "789",
+      "email": "alok@gmail.com",
+      "address": "sdf",
+      "city": "sdf",
+      "state": "asdf",
+      "pincode": "456789",
+      "employeeStrength": 0,
+      "gstNo": "",
+      "regNo": ""
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
